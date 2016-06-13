@@ -32,15 +32,15 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 # Try to build the kernel
 TARGET_KERNEL_SOURCE := kernel/google/msm
 TARGET_KERNEL_CONFIG := cyanogen_flo_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-4.9-linaro
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-4.9-linaro
 
 # BlissPop Config Flags
 BLISSIFY := true
 BLISS_O3 := true
-BLISS_STRICT := true
+#BLISS_STRICT := true
 BLISS_GRAPHITE := true
 BLISS_KRAIT := true
-Bliss_Build_Block:=1
+#Bliss_Build_Block:=1
 TARGET_TC_ROM :=4.9-linaro
 TARGET_TC_KERNEL :=4.9-linaro
 TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
