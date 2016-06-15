@@ -1,7 +1,7 @@
 [
  {
    "remote":      "github",
-   "repository": "CyanogenMod/android_kernel_google_msm",
+   "repository": "blueyes27/android_kernel_google_msm",
    "target_path": "kernel/google/msm",
    "revision":    "cm-13.0"
  },
