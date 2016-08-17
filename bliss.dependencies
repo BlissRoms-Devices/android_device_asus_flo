@@ -13,7 +13,7 @@
  },
  {
    "remote":     "github",
-   "repository":  ""AICP/proprietary_vendor_asus",
+   "repository":  "AICP/proprietary_vendor_asus",
    "target_path":    "vendor/asus",
    "revision":    "mm6.0"
  }
