@@ -13,8 +13,8 @@
  },
  {
    "remote":     "github",
-   "repository":  "TheMuppets/proprietary_vendor_asus",
+   "repository":  ""AICP/proprietary_vendor_asus",
    "target_path":    "vendor/asus",
-   "revision":    "cm-13.0"
+   "revision":    "mm6.0"
  }
 ]
