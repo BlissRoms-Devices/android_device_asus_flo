@@ -22,6 +22,11 @@ TARGET_CPU_VARIANT := krait
 
 TARGET_NO_BOOTLOADER := false
 
+# Define kernel config for inline building
+TARGET_KERNEL_CONFIG := flo_defconfig
+TARGET_KERNEL_SOURCE := kernel/google/msm
+BOARD_KERNEL_IMAGE_NAME := zImage
+
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 # BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=msm8960 maxcpus=2
@@ -119,3 +124,7 @@ USE_MINIKIN := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+# BLISS options
+TARGET_TC_ROM := 4.9-sm
+TARGET_TC_KERNEL := 4.9-sm
