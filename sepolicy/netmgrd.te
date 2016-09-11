@@ -1,5 +1,5 @@
 # Network utilities (radio process)
-type netmgrd, domain;
+type netmgrd, domain, domain_deprecated;
 type netmgrd_exec, exec_type, file_type;
 
 # Started by init
@@ -26,6 +26,10 @@ allow netmgrd shell_exec:file rx_file_perms;
 
 # Runs /system/bin/ip addr flush dev <device> commands.
 allow netmgrd system_file:file rx_file_perms;
+
+# XXX Run toolbox.  Might not be needed.
+allow netmgrd toolbox_exec:file rx_file_perms;
+auditallow netmgrd toolbox_exec:file rx_file_perms;
 
 allow netmgrd proc_net:file r_file_perms;
 allow netmgrd proc_net:dir r_dir_perms;

@@ -40,8 +40,7 @@ static int wifi_check_qcom_cfg_files()
         int n = fread(macAddress, 12, 1, fp);
         fclose(fp);
         if (n != 1) {
-            // Buffer may be partially written. Reset.
-            memset(macAddress, 0, sizeof(macAddress));
+            memset(macAddress, 0, 13);
             wfc_util_qcom_check_config((unsigned char *)macAddress);
             return 0;
         }

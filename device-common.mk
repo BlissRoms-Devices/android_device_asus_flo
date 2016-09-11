@@ -20,7 +20,11 @@
 #
 # Everything in this directory will become public
 
-PRODUCT_AAPT_CONFIG := normal
+# This device is xhdpi.  However the platform doesn't
+# currently contain all of the bitmaps at xhdpi density so
+# we do this little trick to fall back to the hdpi version
+# if the xhdpi doesn't exist.
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PACKAGES := \
@@ -35,6 +39,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     charger_res_images
+
+# Live Wallpapers
+PRODUCT_PACKAGES += \
+        LiveWallpapersPicker \
+        librs_jni
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
