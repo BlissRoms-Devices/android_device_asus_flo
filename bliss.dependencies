@@ -1,20 +1,26 @@
 [
  {
    "remote":      "github",
-   "repository": "blueyes27/android_kernel_google_msm",
+   "repository":  "BlissRoms-Kernels/android_kernel_google_msm",
    "target_path": "kernel/google/msm",
    "revision":    "cm-13.0"
  },
  {
-   "remote":   "github",
-   "repository": "android_external_stlport",
+   "remote":      "github",
+   "repository":  "android_external_stlport",
    "target_path": "external/stlport",
    "revision":    "cm-13.0"
  },
  {
    "remote":     "github",
-   "repository":  "AICP/proprietary_vendor_asus",
-   "target_path":    "vendor/asus",
-   "revision":    "mm6.0"
- }
+   "repository":  "BlissRoms-Devices/android_vendor_asus_deb",
+   "target_path": "vendor/deb",
+   "revision":    "n7.0"
+ },
+{
+   "remote":     "github",
+   "repository":  "BlissRoms-Devices/android_vendor_asus_flo",
+   "target_path": "vendor/flo",
+   "revision":    "n7.0"
+ } 
 ]
